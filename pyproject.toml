@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "steganography"
+version = "0.1.0"
+description = ""
+authors = ["Arthur Fontaine <afontaine@advanced-schema.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+numpy = "^1.26.3"
+opencv-python = "^4.9.0.80"
+
+[tool.poetry.scripts]
+steganography = "steganography.main:main"
+steganography_test = "steganography.test:test"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
